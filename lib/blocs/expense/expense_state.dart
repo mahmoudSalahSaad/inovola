@@ -70,7 +70,7 @@ class ExpenseError extends ExpenseState {
   final String message;
   final String? details;
 
-  const ExpenseError({
+  const ExpenseError(String s, {
     required this.message,
     this.details,
   });

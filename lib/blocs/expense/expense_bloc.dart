@@ -63,7 +63,8 @@ class ExpenseBloc extends Bloc<ExpenseEvent, ExpenseState> {
       ));
     } catch (e) {
       emit(ExpenseError(
-        message: 'Failed to load expenses',
+         'Failed to load expenses',
+         message: 'N/A',
         details: e.toString(),
       ));
     }
@@ -243,7 +244,8 @@ class ExpenseBloc extends Bloc<ExpenseEvent, ExpenseState> {
       ));
     } catch (e) {
       emit(ExpenseError(
-        message: 'Failed to search expenses',
+         'Failed to search expenses',
+         message: 'N/A',
         details: e.toString(),
       ));
     }
@@ -264,7 +266,8 @@ class ExpenseBloc extends Bloc<ExpenseEvent, ExpenseState> {
       ));
     } catch (e) {
       emit(ExpenseError(
-        message: 'Failed to filter expenses',
+         'Failed to filter expenses',
+         message: 'N/A',
         details: e.toString(),
       ));
     }
